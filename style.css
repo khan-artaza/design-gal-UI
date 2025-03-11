@@ -1,0 +1,1506 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Baskervville:ital@0;1&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cabin+Sketch:wght@400;700&family=Delicious+Handrawn&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fira+Code:wght@300..700&family=Indie+Flower&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Syne:wght@400..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #FDF9EC;
+}
+
+main {
+  padding: 12px 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #11193B;
+}
+nav h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+nav i {
+  font-size: 2.4rem;
+}
+
+.first {
+  padding: 25px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.first .pinkCard {
+  width: 100%;
+  background-color: #F889E7;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 25px;
+  position: relative;
+  overflow: hidden;
+}
+.first .pinkCard img {
+  width: 250px;
+  position: absolute;
+  bottom: -110px;
+  right: -120px;
+}
+.first .pinkCard .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 14px;
+}
+.first .pinkCard .text h2 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: #11193B;
+  line-height: 1.1;
+}
+.first .pinkCard .text p {
+  font-size: 17px;
+  color: #11193B;
+  width: 100%;
+  font-weight: 500;
+  opacity: 0.85;
+  line-height: 1.5;
+}
+.first .pinkCard button {
+  background-color: #11193B;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+}
+.first .pinkCard button p, .first .pinkCard button i {
+  font-weight: 600;
+  color: white;
+}
+.first .pinkCard button p {
+  font-size: 16px;
+}
+.first .pinkCard button i {
+  font-size: 18px;
+}
+.first .imgCard {
+  width: 100%;
+  border-radius: 12px;
+}
+.first .imgCard img {
+  border-radius: 12px;
+  width: 100%;
+  aspect-ratio: 6/2;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.first .marq {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding: 25px 0;
+  border-radius: 12px;
+  background-color: #D8D800;
+  overflow-x: hidden;
+  position: relative;
+}
+.first .marq .opct {
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  border-radius: 12px;
+  z-index: 9;
+}
+.first .marq .left {
+  left: 0;
+  background: linear-gradient(to right, #D8D800, transparent);
+}
+.first .marq .Right {
+  right: 0;
+  background: linear-gradient(to left, #D8D800, transparent);
+}
+.first .marq .slide {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+}
+.first .feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.first .feature .yellowCard {
+  width: 100%;
+  background-color: #FFDF2B;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  border-radius: 12px;
+  padding: 30px 20px;
+}
+.first .feature .yellowCard img {
+  width: 70px;
+  border-radius: 50%;
+}
+.first .feature .yellowCard .words {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.first .feature .yellowCard .words h2 {
+  font-size: 16px;
+  color: #11193B;
+}
+.first .feature .yellowCard .words p {
+  font-size: 15px;
+  color: #11193B;
+  line-height: 1.5;
+}
+
+.name {
+  display: none;
+  width: 100%;
+}
+.name h2 {
+  width: 100%;
+  color: #11193B;
+  font-size: 4.76rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.second {
+  width: 100%;
+  margin-top: 40px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.second .peachCard {
+  position: relative;
+  overflow: hidden;
+  color: #11193B;
+  padding: 25px;
+  width: 100%;
+  border-radius: 12px;
+  background-color: #FAEBC5;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+.second .peachCard h2 {
+  font-size: 30px;
+  font-weight: 700;
+  width: 50%;
+}
+.second .peachCard p {
+  font-size: 14px;
+}
+.second .peachCard img {
+  position: absolute;
+  width: 150px;
+  top: -20px;
+  right: -40px;
+}
+.second .purpleCard {
+  background-color: #D3A7F2;
+}
+.second .magentaCard {
+  background-color: #C71E70;
+}
+.second .blueCard {
+  background-color: #0081C6;
+}
+.second .yellowCard {
+  background-color: #E3AA1F;
+}
+.second .colourCard {
+  width: 100%;
+  height: 352px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 0px 15px 0px 15px;
+  gap: 20px;
+}
+.second .colourCard .bigImg {
+  width: 100%;
+  border-radius: 12px;
+  bottom: -15px;
+  position: relative;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.second .colourCard .smallImg {
+  width: 50%;
+  border-radius: 12px;
+  bottom: -120px;
+  position: relative;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  display: none;
+}
+.second .colourCard .mgSmall {
+  width: 35%;
+  border-radius: 12px;
+  bottom: -120px;
+  position: relative;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  display: none;
+}
+.second .tags {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 0px 30px 0px;
+  display: none;
+}
+.second .tags h3 {
+  font-size: 18px;
+  color: #11193B;
+}
+.second .tags .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.second .tags .buttons p {
+  padding: 10px 15px;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #FAEBC5;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.third {
+  width: 100%;
+  background-color: #FAEBC5;
+  border-radius: 12px;
+  padding-bottom: 25px;
+}
+.third .upperSlide {
+  padding: 40px 0px 15px 15px;
+  color: #11193B;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.third .upperSlide p, .third .upperSlide h2 {
+  text-align: center;
+}
+.third .upperSlide p {
+  font-size: 15px;
+}
+.third .upperSlide h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.third .upperSlide .boxContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  overflow-x: auto;
+}
+.third .upperSlide .boxContainer .box {
+  width: 311px;
+  flex-shrink: 0;
+  padding: 30px 20px;
+  border-radius: 12px;
+}
+.third .upperSlide .boxContainer .box p {
+  font-size: 16px;
+  text-align: start;
+  line-height: 1.5;
+}
+.third .upperSlide .boxContainer .pink {
+  background-color: #FEADD2;
+}
+.third .upperSlide .boxContainer .orange {
+  background-color: #FFBE81;
+}
+.third .lowerPamplet {
+  padding: 0 15px;
+}
+.third .lowerPamplet .para {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  line-height: 1.5;
+  padding: 60px 0;
+}
+.third .lowerPamplet .headings {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+.third .lowerPamplet .headings .head1 {
+  background-color: #D8D800;
+}
+.third .lowerPamplet .headings .head2 {
+  background-color: #FFDF2B;
+}
+.third .lowerPamplet .headings h4 {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 50%;
+  padding: 20px 20px;
+  font-size: 14px;
+  text-align: center;
+}
+.third .lowerPamplet .feat1 {
+  grid-area: a;
+}
+.third .lowerPamplet .feat2 {
+  grid-area: b;
+}
+.third .lowerPamplet .feat3 {
+  grid-area: c;
+}
+.third .lowerPamplet .feat4 {
+  grid-area: d;
+}
+.third .lowerPamplet .feat5 {
+  grid-area: e;
+}
+.third .lowerPamplet .feat6 {
+  grid-area: f;
+}
+.third .lowerPamplet .pampFeature {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  background-color: #D8D800;
+  display: grid;
+  grid-template-areas: "a b" "c d" "e f";
+  gap: 30px;
+}
+.third .lowerPamplet .pampFeature .feat {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.third .lowerPamplet .pampFeature .feat img {
+  width: 60px;
+  border-radius: 50%;
+}
+.third .lowerPamplet .pampFeature .feat p {
+  text-align: center;
+  font-size: 13px;
+  width: 60%;
+}
+.third .lowerPamplet .yellowPamp {
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  padding: 20px;
+  width: 100%;
+  background-color: #FFDF2B;
+  display: grid;
+  grid-template-areas: "a b" "c d" "e f";
+  gap: 30px;
+}
+.third .lowerPamplet .yellowPamp .feat {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.third .lowerPamplet .yellowPamp .feat img {
+  width: 60px;
+  border-radius: 50%;
+}
+.third .lowerPamplet .yellowPamp .feat p {
+  text-align: center;
+  font-size: 13px;
+  width: 60%;
+}
+.third .lowerPamplet .pampBottom {
+  position: relative;
+  color: #11193B;
+  background-color: #D8D800;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 0;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.third .lowerPamplet .pampBottom button {
+  border: 1px solid #11193B;
+  outline: none;
+  background-color: transparent;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 25px;
+  padding: 10px 15px;
+  color: #11193B;
+  padding: 15px 0;
+}
+.third .lowerPamplet .pampBottom button h3 {
+  font-size: 16px;
+}
+.third .lowerPamplet .pampBottom h4 {
+  text-align: center;
+  font-size: 16px;
+}
+.third .lowerPamplet .yellowPampBottom {
+  position: absolute;
+  color: #11193B;
+  background-color: #FFDF2B;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 0;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.third .lowerPamplet .yellowPampBottom button {
+  border: 1px solid #11193B;
+  outline: none;
+  background-color: transparent;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 25px;
+  padding: 10px 15px;
+  color: #11193B;
+  padding: 15px 0;
+}
+.third .lowerPamplet .yellowPampBottom button h3 {
+  font-size: 16px;
+}
+.third .lowerPamplet .yellowPampBottom h4 {
+  text-align: center;
+  font-size: 16px;
+}
+
+.fourth {
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.fourth .imgFstCrd {
+  border-radius: 12px;
+  width: 100%;
+}
+.fourth .imgFstCrd img {
+  border-radius: 12px;
+  width: 100%;
+  height: 272px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 15%;
+     object-position: 0% 15%;
+}
+.fourth .txtCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: space-between;
+  gap: 55px;
+  border-radius: 12px;
+  color: #11193B;
+  padding: 20px 25px;
+}
+.fourth .txtCard .up {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.fourth .txtCard h2 {
+  font-size: 23px;
+  font-weight: 600;
+}
+.fourth .txtCard p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+.fourth .imgFstCrd {
+  grid-area: p;
+}
+.fourth .secondCard {
+  grid-area: q;
+  overflow: hidden;
+  background-color: #FFDF2B;
+  position: relative;
+}
+.fourth .secondCard .pinkCloud {
+  width: 140px;
+  position: absolute;
+  top: -20px;
+  right: -75px;
+}
+.fourth .thirdCard {
+  grid-area: r;
+  background-color: #EEEE39;
+}
+.fourth .fourthCard {
+  grid-area: s;
+  background-color: #FEADD2;
+}
+
+.fifth {
+  padding-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.fifth .peachCard {
+  border-radius: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #11193B;
+  gap: 30px;
+  padding-top: 60px;
+  background-color: #FAEBC5;
+}
+.fifth .peachCard .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fifth .peachCard .text h2 {
+  font-size: 29px;
+  font-weight: 600;
+  width: 75%;
+  text-align: center;
+}
+.fifth .peachCard .text p {
+  font-size: 14px;
+  width: 85%;
+  text-align: center;
+}
+.fifth .peachCard .threeSemiCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 204px;
+}
+.fifth .peachCard .threeSemiCircle img {
+  width: 100%;
+}
+.fifth #pch2 {
+  display: none;
+}
+.fifth #pch2 .flx {
+  height: 100%;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fifth #pch2 .flx .keyy {
+  display: grid;
+  grid-template-areas: "b1 b2" "b3 b4" "b5 b6";
+  gap: 20px;
+  place-items: center;
+}
+.fifth #pch2 .flx .keyy button {
+  border: none;
+  color: #11193B;
+  font-size: 18px;
+  padding: 15px 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 25px;
+}
+.fifth #pch2 .flx .keyy .b1 {
+  grid-area: b1;
+  background-color: #FEADD2;
+}
+.fifth #pch2 .flx .keyy .b2 {
+  grid-area: b2;
+  background-color: #FF9D65;
+}
+.fifth #pch2 .flx .keyy .b3 {
+  grid-area: b3;
+  background-color: #FFBE81;
+}
+.fifth #pch2 .flx .keyy .b4 {
+  grid-area: b4;
+  background-color: #D8D800;
+}
+.fifth #pch2 .flx .keyy .b5 {
+  grid-area: b5;
+  background-color: #EDBBF9;
+}
+.fifth #pch2 .flx .keyy .b6 {
+  grid-area: b6;
+  background-color: #FF9999;
+}
+.fifth .getStarted {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  padding: 22px 0;
+  color: #11193B;
+  background-color: #D8D800;
+  height: 140px;
+}
+.fifth .getStarted button {
+  color: #11193B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  outline: none;
+  background-color: #EEEE39;
+  border-radius: 25px;
+  padding: 15px 25px;
+}
+.fifth .getStarted button p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.fifth .getStarted button i {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.sixth {
+  color: #11193B;
+  margin-top: 45px;
+}
+.sixth h2 {
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-bottom: 22px;
+}
+.sixth .ovflow {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+.sixth .page1 {
+  flex-shrink: 0;
+  border-radius: 12px;
+  width: 320px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.sixth .page1 p {
+  line-height: 1.5;
+  width: 100%;
+}
+.sixth .pg1 {
+  background-color: #FFDF2B;
+  grid-area: e;
+}
+.sixth .pg2 {
+  background-color: #EDBBF9;
+  grid-area: f;
+}
+.sixth .pg3 {
+  background-color: #FF9999;
+  grid-area: g;
+}
+.sixth .pg4 {
+  background-color: #D8D800;
+  grid-area: h;
+}
+
+.seventh {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+  background-color: #FF9D65;
+  border-radius: 20px;
+  padding: 10px;
+}
+.seventh .upar {
+  padding: 5px 0px 0px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.seventh .upar .alphabets {
+  color: #11193B;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.seventh .upar .alphabets h2 {
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 600;
+}
+.seventh .upar .circularImage {
+  border: 3px solid #FFDF2B;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seventh .upar .circularImage img {
+  width: 100%;
+  border-radius: 50%;
+}
+.seventh .yellowLinksContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+.seventh .yellowLinksContainer .yellowLinks {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFDF2B;
+  border-radius: 10px;
+  padding: 15px 10px;
+}
+.seventh .yellowLinksContainer .yellowLinks p {
+  font-weight: 600;
+  font-size: 14px;
+  color: #11193B;
+}
+.seventh .yellowLinksContainer .yellowLinks button {
+  background-color: #D096DF;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.seventh .yellowLinksContainer .yellowLinks button:hover {
+  background-color: #FFA9D4;
+}
+.seventh .yellowLinksContainer .yellowLinks i {
+  font-size: 24px;
+  font-weight: 500;
+  color: #11193B;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+  }
+  main {
+    padding: 18px 20px;
+  }
+  nav {
+    display: none;
+  }
+  .first {
+    width: 100%;
+    gap: 18px;
+  }
+  .first .pinkCard {
+    border-radius: 20px;
+  }
+  .first .pinkCard img {
+    width: 310px;
+    right: -90px;
+  }
+  .first .pinkCard .text h2 {
+    font-size: 40px;
+    width: 70%;
+  }
+  .first .pinkCard .text p {
+    font-size: 18px;
+    width: 60%;
+  }
+  .first .pinkCard button {
+    padding: 18px 30px;
+  }
+  .first .imgCard {
+    border-radius: 20px;
+  }
+  .first .imgCard img {
+    border-radius: 20px;
+  }
+  .first .marq {
+    border-radius: 20px;
+  }
+  .first .feature {
+    flex-direction: row;
+    gap: 18px;
+  }
+  .first .feature .yellowCard {
+    border-radius: 20px;
+  }
+  .first .yellowCard {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+  }
+  .first .yellowCard .words {
+    align-items: center;
+    justify-content: center;
+  }
+  .first .yellowCard .words p, .first .yellowCard .words h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
+  }
+  .name {
+    display: block;
+  }
+  .second {
+    position: relative;
+  }
+  .second .peachCard {
+    height: 300px;
+    justify-content: space-between;
+    gap: 0px;
+  }
+  .second .peachCard h2 {
+    font-size: 40px;
+    width: 100%;
+  }
+  .second .peachCard p {
+    font-size: 18px;
+    width: 60%;
+  }
+  .second .peachCard img {
+    width: 280px;
+    top: 100px;
+    position: absolute;
+  }
+  .second .colourCard {
+    padding: 20px 35px 0px 35px;
+  }
+  .second .colourCard .smallImg, .second .colourCard .mgSmall {
+    display: block;
+  }
+  .second .tags {
+    display: block;
+    align-items: center;
+    display: flex;
+  }
+  .second .card {
+    border-radius: 20px;
+  }
+  .third {
+    border-radius: 20px;
+  }
+  .third .upperSlide p {
+    font-size: 20px;
+  }
+  .third .upperSlide h2 {
+    font-size: 37px;
+    width: 50%;
+    margin: auto;
+  }
+  .third .upperSlide .boxContainer {
+    padding: 0 60px;
+    display: grid;
+    grid-template-areas: "o t" "z f";
+  }
+  .third .upperSlide .boxContainer .box {
+    width: 100%;
+    border-radius: 20px;
+  }
+  .third .upperSlide .boxContainer .box-one {
+    grid-area: o;
+  }
+  .third .upperSlide .boxContainer .box-two {
+    grid-area: t;
+  }
+  .third .upperSlide .boxContainer .box-three {
+    grid-area: z;
+    background-color: #FFBE81;
+  }
+  .third .upperSlide .boxContainer .box-four {
+    background-color: #FEADD2;
+    grid-area: f;
+  }
+  .third .lowerPamplet .pampBottom {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .third .lowerPamplet .pampBottom .yellowPampBottom {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .fourth {
+    gap: 20px;
+    display: grid;
+    grid-template-areas: "p p" "q q" "r s";
+  }
+  .fourth .txtCard {
+    border-radius: 20px;
+  }
+  .fourth .txtCard p {
+    width: 100%;
+    font-size: 17px;
+  }
+  .fourth .imgFstCrd {
+    border-radius: 20px;
+  }
+  .fourth .imgFstCrd img {
+    border-radius: 20px;
+  }
+  .fourth .secondCard {
+    height: 298px;
+    gap: 0px;
+    justify-content: space-between;
+  }
+  .fourth .secondCard .para {
+    width: 70%;
+  }
+  .fourth .secondCard .pinkCloud {
+    width: 240px;
+    position: absolute;
+    top: 97px;
+    right: -62px;
+  }
+  .fourth .fourthCard {
+    height: 100%;
+  }
+  .fifth {
+    margin-top: 15px;
+  }
+  .fifth .peachCard {
+    height: 210px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 27px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  .fifth .peachCard .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .fifth .peachCard .text h2 {
+    width: 400px;
+  }
+  .fifth .peachCard .text p {
+    width: 530px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .fifth .peachCard .text h2, .fifth .peachCard .text p {
+    text-align: start;
+  }
+  .fifth .peachCard .threeSemiCircle {
+    position: absolute;
+    right: -90px;
+    width: 210px;
+    height: 100%;
+  }
+  .fifth .getStarted {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 25px;
+    border-radius: 20px;
+  }
+  .fifth .getStarted h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .sixth h2 {
+    padding: 45px 0;
+    font-size: 45px;
+  }
+  .sixth .ovflow {
+    display: grid;
+    grid-template-areas: "e ." "e f" "g f" "g h" ". h";
+    gap: 15px;
+  }
+  .sixth .ovflow .pg1, .sixth .ovflow .pg2, .sixth .ovflow .pg3, .sixth .ovflow .pg4 {
+    width: 100%;
+    border-radius: 20px;
+  }
+  .sixth .ovflow .pg1 p, .sixth .ovflow .pg2 p, .sixth .ovflow .pg3 p, .sixth .ovflow .pg4 p {
+    font-size: 16px;
+  }
+  .seventh {
+    padding: 40px 30px;
+  }
+  .seventh .upar .alphabets {
+    width: 100%;
+  }
+  .seventh .upar .alphabets h2 {
+    font-size: 48px;
+    letter-spacing: -1px;
+    width: 100%;
+  }
+  .seventh .upar .alphabets p {
+    width: 65%;
+    padding-top: 20px;
+  }
+  .seventh .upar .circularImage {
+    width: 100px;
+  }
+  .seventh .yellowLinksContainer {
+    margin-top: 80px;
+  }
+  .seventh .yellowLinksContainer .yellowLinks p {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .seventh .yellowLinksContainer .yellowLinks button {
+    padding: 7px 20px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 1280px) {
+  html {
+    font-size: clamp(1rem, 2.5vw, 3rem);
+  }
+  main {
+    padding: 18px 20px;
+  }
+  nav {
+    display: none;
+  }
+  .first {
+    width: 100%;
+    gap: 18px;
+  }
+  .first .pinkCard {
+    padding: 50px;
+    border-radius: 50px;
+  }
+  .first .pinkCard img {
+    width: 450px;
+    right: -75px;
+    bottom: -160px;
+  }
+  .first .pinkCard .text h2 {
+    font-size: 60px;
+    width: 70%;
+  }
+  .first .pinkCard .text p {
+    font-size: 25px;
+    width: 50%;
+  }
+  .first .pinkCard button {
+    padding: 18px 30px;
+  }
+  .first .imgCard {
+    border-radius: 50px;
+    height: 600px;
+  }
+  .first .imgCard img {
+    border-radius: 50px;
+    height: 100%;
+  }
+  .first .marq {
+    padding: 45px 0;
+    border-radius: 45px;
+  }
+  .first .marq .slide {
+    gap: 60px;
+  }
+  .first .feature {
+    flex-direction: row;
+    gap: 18px;
+  }
+  .first .feature .yellowCard {
+    flex-direction: row;
+    border-radius: 45px;
+    padding: 30px 35px;
+  }
+  .first .feature .yellowCard .words h2, .first .feature .yellowCard .words p {
+    text-align: start;
+  }
+  .first .yellowCard {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+  }
+  .first .yellowCard .words {
+    align-items: center;
+    justify-content: center;
+  }
+  .first .yellowCard .words p, .first .yellowCard .words h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
+  }
+  .name {
+    display: block;
+  }
+  .name h2 {
+    padding: 50px 0;
+  }
+  .second {
+    margin-top: 140px;
+    gap: 20px;
+  }
+  .second .card {
+    border-radius: 45px;
+  }
+  .second .peachCard {
+    padding: 50px 50px;
+  }
+  .second .peachCard h2 {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: -1px;
+  }
+  .second .peachCard p {
+    font-size: 20px;
+  }
+  .second .peachCard img {
+    width: 350px;
+    top: -100px;
+    right: -80px;
+  }
+  .second .colourCard {
+    height: 680px;
+  }
+  .second .tags h3 {
+    font-size: 25px;
+  }
+  .second .tags .buttons p {
+    color: #11193B;
+    font-size: 18px;
+  }
+  .third {
+    padding: 40px 80px;
+    border-radius: 45px;
+  }
+  .third .upperSlide p {
+    font-size: 25px;
+    letter-spacing: -1px;
+  }
+  .third .upperSlide h2 {
+    width: 60%;
+    font-size: 65px;
+    letter-spacing: -1px;
+  }
+  .third .upperSlide .boxContainer {
+    width: 70%;
+    margin: auto;
+    gap: 20px;
+    padding: 0;
+  }
+  .third .upperSlide .boxContainer .box {
+    border-radius: 30px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+  }
+  .third .upperSlide .boxContainer .box p {
+    font-size: 19px;
+    width: 90%;
+  }
+  .third .lowerPamplet .para {
+    width: 30%;
+    color: #11193B;
+    font-size: 25px;
+    letter-spacing: -1px;
+  }
+  .third .lowerPamplet .headings h4 {
+    font-size: 28px;
+    letter-spacing: -1px;
+    padding: 30px 0;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+  }
+  .third .lowerPamplet .pampFeature, .third .lowerPamplet .yellowPamp {
+    padding: 60px 50px;
+    grid-template-areas: "a b c" "d e f";
+    gap: 50px;
+  }
+  .third .lowerPamplet .pampFeature .feat img, .third .lowerPamplet .yellowPamp .feat img {
+    width: 80px;
+  }
+  .third .lowerPamplet .pampFeature .feat p, .third .lowerPamplet .yellowPamp .feat p {
+    font-size: 18px;
+    opacity: 0.9;
+  }
+  .third .lowerPamplet .pampBottom {
+    position: relative;
+  }
+  .third .lowerPamplet .yellowPampBottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .third .lowerPamplet .pampBottom, .third .lowerPamplet .yellowPampBottom {
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px 80px 60px;
+  }
+  .third .lowerPamplet .pampBottom h4, .third .lowerPamplet .yellowPampBottom h4 {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 24px;
+  }
+  .third .lowerPamplet .pampBottom button, .third .lowerPamplet .yellowPampBottom button {
+    width: 200px;
+    margin: 0px;
+  }
+  .third .lowerPamplet .pampBottom button h3, .third .lowerPamplet .yellowPampBottom button h3 {
+    font-size: 18px;
+  }
+  .fourth {
+    display: grid;
+    grid-template-areas: "u u v v" "u u v v" "u u w x";
+  }
+  .fourth .txtCard {
+    border-radius: 45px;
+  }
+  .fourth .imgFstCrd {
+    grid-area: u;
+    border-radius: 45px;
+  }
+  .fourth .imgFstCrd img {
+    height: 100%;
+    width: 100%;
+    border-radius: 45px;
+  }
+  .fourth .secondCard {
+    grid-area: v;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    gap: 0px;
+  }
+  .fourth .secondCard .up h2 {
+    font-size: 60px;
+    letter-spacing: -1px;
+  }
+  .fourth .secondCard .up p {
+    font-size: 25px;
+    letter-spacing: -1px;
+  }
+  .fourth .secondCard .down p {
+    font-size: 18px;
+  }
+  .fourth .secondCard .pinkCloud {
+    width: 300px;
+    top: 220px;
+  }
+  .fourth .thirdCard {
+    grid-area: w;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    gap: 0px;
+    justify-content: space-between;
+  }
+  .fourth .thirdCard h2 {
+    font-size: 28px;
+    letter-spacing: -1px;
+  }
+  .fourth .thirdCard p {
+    font-size: 16px;
+  }
+  .fourth .fourthCard {
+    grid-area: x;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    gap: 0px;
+    justify-content: space-between;
+  }
+  .fourth .fourthCard h2 {
+    font-size: 28px;
+    letter-spacing: -1px;
+  }
+  .fourth .fourthCard p {
+    font-size: 16px;
+  }
+  .fifth {
+    display: grid;
+    grid-template-areas: "s t" "u u";
+    gap: 20px;
+  }
+  .fifth .pch1 {
+    grid-area: s;
+    width: 100%;
+  }
+  .fifth #pch2 {
+    display: block;
+    grid-area: t;
+    width: 100%;
+  }
+  .fifth .getStarted {
+    grid-area: u;
+    width: 100%;
+    border-radius: 40px;
+  }
+  .fifth .peachCard {
+    height: 700px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px;
+    border-radius: 45px;
+  }
+  .fifth .peachCard .text {
+    gap: 20px;
+    z-index: 99;
+  }
+  .fifth .peachCard .text h2 {
+    font-size: 36px;
+    letter-spacing: -1px;
+    text-align: center;
+    width: 58%;
+    margin: auto;
+  }
+  .fifth .peachCard .text p {
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+  }
+  .fifth .peachCard .threeSemiCircle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+  }
+  .fifth .peachCard .threeSemiCircle img {
+    width: 300px;
+    bottom: 0;
+    position: absolute;
+  }
+  .sixth .ovflow {
+    width: 90%;
+    margin: auto;
+  }
+  .sixth .ovflow .page1 {
+    padding: 40px 60px;
+    border-radius: 45px;
+  }
+  .sixth .ovflow .page1 p {
+    font-size: 18px;
+  }
+  .seventh {
+    border-radius: 45px;
+    padding: 40px 45px;
+  }
+  .seventh .upar .alphabets h2 {
+    font-size: 68px;
+  }
+  .seventh .upar .alphabets p {
+    font-size: 25px;
+  }
+  .seventh .upar .circularImage {
+    width: 120px;
+  }
+  .seventh .yellowLinksContainer {
+    gap: 20px;
+  }
+  .seventh .yellowLinksContainer .yellowLinks {
+    border-radius: 18px;
+    padding: 20px 30px;
+  }
+  .seventh .yellowLinksContainer .yellowLinks p {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .seventh .yellowLinksContainer .yellowLinks i {
+    font-weight: 700;
+  }
+}/*# sourceMappingURL=style.css.map */
